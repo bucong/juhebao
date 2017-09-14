@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mui.picker.min.css"/>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<header class="head">
+		<a href="javascript:history.back(-1)">
+			<span class="fa fa-angle-left"></span> 返回
+		</a>
+		<h3>资金明细</h3>
+	</header>
+	<article class="money-detail">
+		<div class="flex">
+			<h4>我的账单</h4>	
+			<span>可用余额 <label>666328</label>元</span>
+		</div>
+		<div>
+			时间：
+			<input type="text" name="" id="startTime" data-options='{"type":"date"}' class="btn1 mui-btn mui-btn-block" value="" readonly />
+			——
+			<input type="text" name="" id="endTime" data-options='{"type":"date"}' class="btn2 mui-btn mui-btn-block" value="" readonly />
+		</div>
+		<table class="table">
+			<tr>
+				<th>创建时间</th>
+				<th>名称</th>
+				<th>操作金额</th>
+				<th>状态</th>
+				<th>类型</th>
+			</tr>
+			<tr>
+				<td>2017-05-24 17:52</td>
+				<td>新手宝</td>
+				<td>-8000.00</td>
+				<td>交易成功</td>
+				<td>理财</td>
+			</tr>
+			<tr>
+				<td>2017-05-24 17:52</td>
+				<td>新手宝</td>
+				<td>-8000.00</td>
+				<td>交易成功</td>
+				<td>理财</td>
+			</tr>
+			<tr>
+				<td>2017-05-24 17:52</td>
+				<td>新手宝</td>
+				<td>-8000.00</td>
+				<td>交易成功</td>
+				<td>理财</td>
+			</tr>
+			<tr>
+				<td>2017-05-24 17:52</td>
+				<td>新手宝</td>
+				<td>-8000.00</td>
+				<td>交易成功</td>
+				<td>理财</td>
+			</tr>
+		</table>
+	</article>
+</body>
+
+<script type="text/javascript">
+	(function($) {
+		$.init();
+		var result = $('#startTime')[0];
+		var btns = $('.btn1');
+		btns.each(function(i, btn) {
+			btn.addEventListener('tap', function() {
+				var optionsJson = this.getAttribute('data-options') || '{}';
+				var options = JSON.parse(optionsJson);
+				var id = this.getAttribute('id');
+				var picker = new $.DtPicker(options);
+				picker.show(function(rs) {
+					result.value =  rs.text;
+					picker.dispose();
+				});
+			}, false);
+		});
+	})(mui);
+	(function($) {
+		$.init();
+		var result = $('#endTime')[0];
+		var btns = $('.btn2');
+		btns.each(function(i, btn) {
+			btn.addEventListener('tap', function() {
+				var optionsJson = this.getAttribute('data-options') || '{}';
+				var options = JSON.parse(optionsJson);
+				var id = this.getAttribute('id');
+				var picker = new $.DtPicker(options);
+				picker.show(function(rs) {
+					result.value =  rs.text;
+					picker.dispose();
+				});
+			}, false);
+		});
+	})(mui);
+</script>
+</html>

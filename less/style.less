@@ -1,0 +1,1263 @@
+//-----------------public
+body{
+    background: #fff;
+}
+.head{
+    position: relative;
+    color: #666;
+    height: .9rem;
+    line-height: .9rem;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    a{
+        position: absolute;
+        color: #666;
+        line-height: .9rem;
+        margin-left: .2rem;
+        font-size: .28rem;
+    }
+    h3{
+        text-align: center;
+        font-size: .3rem;
+        line-height: .9rem;
+        font-weight: 100;
+    }
+}
+.nav-bottom{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f7f7f7;
+    justify-content: space-around;
+    padding: .1rem .2rem;
+    a{
+        display: block;
+        text-align: center;
+        img{
+            display: block;
+            margin: 0 auto;
+            width: .46rem;
+            height: .46rem;
+        }
+        img:nth-child(2){
+            display: none;
+        }
+        p{
+            margin: 0;
+            font-size: .24rem;
+        }
+    }
+    .active{
+        img:nth-child(1){
+            display: none;
+        }
+        img:nth-child(2){
+            display: block;
+        }
+        p{
+            color: #f00;
+        }
+        
+    }
+}
+.f8{
+    background: #f8f8f8;
+}
+//----------------------首页
+.logo-index{
+    background: #f8f8f8;
+    height: .9rem;
+    padding: .16rem .2rem;
+    img{
+        width: 2.17rem;
+        height: .58rem;
+    }
+}
+.ind-volume{
+    margin: .18rem;
+    position: relative;
+    overflow: hidden;
+    height: .33rem;
+    img{
+        width: .31rem;
+        height: .33rem;
+    }
+    ul{
+        position: absolute;
+        top: 0;
+        left: .5rem;
+        line-height: .3rem;
+        color: #666;
+    }
+}
+.ind-nav-top{
+    border-top: 1px solid #eee;
+    border-bottom: .2rem solid #eee;
+    a{
+        display: block;
+        height: .8rem;
+        width: 3.74rem;
+        margin: .2rem 0;
+        padding-left: .2rem;
+        img{
+            float: left;
+            width: .8rem;
+            height: .8rem;
+        }
+        figcaption{
+            float: left;
+            padding-left: .3rem;
+            padding-top: .1rem;
+            h3{
+                font-size: .3rem;
+                color: #666;
+                font-weight: 100;
+            }
+            p{
+                font-size: .24rem;
+                color: #777;
+            }
+        }
+    }
+    a:last-child{
+        border-left: 1px solid #eee;
+    }
+}
+.list{
+    h3{
+        margin: 0;
+        padding: .4rem 0 .2rem .2rem;
+        font-size: .32rem;
+        font-weight: 100;
+        color: #666;
+        border-bottom: 2px solid #eee;
+    }
+    li{
+        padding: .4rem .2rem;
+        border-bottom: .2rem solid #eee;
+        font-size: .3rem;
+        div{
+            margin-bottom: .1rem;
+        }
+        h5{
+            font-size: .28rem;
+            margin: 0;
+            padding-bottom: .2rem;
+        }
+        .blue{
+            color: #1d95d4;
+        }
+        p{
+            margin: 0;
+        }
+        label{
+            color: #f00;
+        }
+        .canvas{
+            width: 60px;
+            height: 60px;
+            position: relative;
+            span{
+                position: absolute;
+                top: 20px;
+                left: 24%;
+                color: #666;
+            }
+        }
+    }
+}
+.know-title{
+    font-size: .3rem;
+    color: #555;
+    padding: .2rem;
+    border-bottom: 1px solid #eee;
+}
+.show-img{
+    padding: .24rem 0 .1rem 0;
+    a{
+        display: block;
+        width: 7rem;
+        height: 2.8rem;
+        padding: .8rem 0;
+        text-align: center;
+        background-size: cover;
+        color: #fff;
+        margin: 0 auto .32rem auto;
+        h2{
+            font-size: .56rem;
+            font-weight: 100;
+            margin-bottom: .1rem;
+        }
+        p{
+            font-size: .3rem;
+            color: #fff;
+        }
+    }
+}
+.know-bottom{
+    height: 1.5rem;
+    background: #eee;
+    padding: .28rem 0;
+    .flex{
+        justify-content: center;
+        img{
+            width: .49rem;
+            height: .49rem;
+            margin-right: .16rem;
+        }
+        span{
+            font-size: .28rem;
+            color: #666;
+        }
+        hr{
+            width: 1rem;
+            border: none;
+            border-bottom: .01rem solid #666;
+        }
+        h5{
+            font-size: .24rem;
+            color: #999;
+            padding: .12rem .2rem;
+        }
+    }
+}
+//-----------------------登录
+.login{
+    padding-top: .72rem;
+    img{
+        width: 2.17rem;
+        display: block;
+        margin: 0 auto .48rem auto;
+    }
+    form{
+        width: 5.6rem;
+        margin: 0 auto;
+        input{
+            text-indent: .66rem;
+            height: .84rem;
+        }
+        input:nth-child(1){
+            background-image: url(../images/login_03.png);
+            background-repeat: no-repeat;
+            background-size: .84rem;
+        }
+        input:nth-child(2){
+            background-image: url(../images/login_06.jpg);
+            background-repeat: no-repeat;
+            background-size: .84rem;
+        }
+        .sub{
+            text-indent: 0;
+            background: #eb1c24;
+            color: #fff;
+            border: none;
+            width: 100%;
+        }
+        p{
+            margin-top: .56rem;
+            text-align: right;
+            a{
+                font-size: .28rem;
+                color: #666;
+            }
+            a:nth-child(2){
+                color: #f39c12;
+            }
+        }
+    } 
+}
+//-----------------------设置新密码
+.newpass{
+    padding-top: .6rem;
+    form{
+        width: 7.1rem;
+        margin: 0 auto;
+        padding-right: .7rem;
+    }
+    span{
+        display: inline-block;
+        width: 2rem;
+        text-align: right;
+        color: #666;
+    }
+    input{
+        width: 4.2rem;
+        height: .84rem;
+    }
+    .sub{
+        width: 5.6rem;
+        color: #fff;
+        background: #eb1c24;
+        border: none;
+        margin-top: .6rem;
+        margin-left: .7rem;
+    }
+}
+//-----------------------忘记密码
+.forget{
+    padding-top: .9rem;
+    position: relative;
+    p{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        background: #ffdcdd;
+        color: #999;
+        font-size: .24rem;
+        line-height: .6rem;
+    }
+    form{
+        width: 7.1rem;
+        margin: 0 auto;
+        padding-right: .8rem;
+    }
+    span{
+        display: inline-block;
+        width: 2rem;
+        text-align: right;
+        color: #666;
+    }
+    div{
+        position: relative;
+    }
+    button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        border: none;
+        font-size: .28rem;
+        line-height: .84rem;
+        background: #eb1c24;
+        color: #fff;
+        padding: 0 .1rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    input{
+        width: 4.2rem;
+        height: .84rem;
+    }
+    .sub{
+        width: 5.6rem;
+        color: #fff;
+        background: #eb1c24;
+        border: none;
+        margin-top: .6rem;
+        margin-left: .7rem;
+    }
+}
+//-----------------------注册
+.register{
+    img{
+        width: 100%;
+    }
+    form{
+        width: 7.1rem;
+        margin: .5rem auto;
+        padding-right: .8rem;
+    }
+    span{
+        display: inline-block;
+        width: 2rem;
+        text-align: right;
+        color: #666;
+    }
+    div{
+        position: relative;
+    }
+    button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        border: none;
+        font-size: .28rem;
+        line-height: .84rem;
+        background: #eb1c24;
+        color: #fff;
+        padding: 0 .1rem;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    input{
+        width: 4.2rem;
+        height: .84rem;
+    }
+    .sub{
+        width: 5.6rem;
+        color: #fff;
+        background: #eb1c24;
+        border: none;
+        margin-left: .7rem;
+    }
+}
+//--------------------绑定手机号
+.bindphone{
+    div{
+        margin: 0 .2rem;
+        border-bottom: 1px solid #e6e6e6;
+        span{
+            display: inline-block;
+            width: 1.6rem;
+            line-height: .92rem;
+        }
+        input,select{
+            width: 5.1rem;
+            border: none;
+            margin: 0;
+        }
+    }
+    button{
+        line-height: .62rem;
+        background: #ff8080;
+        color: #fff;
+        letter-spacing: .1rem;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin-top: .5rem;
+    }
+}
+//---------------账户充值提现
+.account{
+    .flex{
+        height: .86rem;
+        padding: .1rem .2rem;
+        border-bottom: 1px solid #e6e6e6;
+        justify-content: space-around;
+        margin-bottom: .4rem;
+        div{
+            line-height: .66rem;
+            font-size: .3rem;
+            height: .66rem;
+        }
+        div:nth-child(2){
+            border-right: 1px solid #e6e6e6;
+        }
+        .active{
+            color: #42a3d9;
+        }
+    }
+    .info{
+        position: fixed;
+        bottom: .6rem;
+        width: 100%;
+        padding: 0 .2rem;
+        h5{
+            font-size: .3rem;
+        }
+        p{
+            font-size: .24rem;
+        }
+    }
+    form{
+        width: 5.6rem;
+        margin: 0 auto;
+        p{
+            margin-bottom: .1rem;
+            font-size: .24rem;
+            label{
+                color: #eb1c24;
+            }
+        }
+        input{
+            text-indent: .66rem;
+            height: .84rem;
+        }
+        input[type="text"]{
+            background-image: url(../images/account_03.jpg);
+            background-repeat: no-repeat;
+            background-size: .84rem;
+        }
+        input[type="password"]{
+            background-image: url(../images/login_06.jpg);
+            background-repeat: no-repeat;
+            background-size: .84rem;
+        }
+        .sub{
+            text-indent: 0;
+            background: #eb1c24;
+            color: #fff;
+            border: none;
+            width: 3.2rem;
+            display: block;
+            margin: 0 auto;
+        }
+    } 
+}
+//---------------------管理团队
+.manage-team{
+    padding-top: .1rem;
+    li{
+        padding: .5rem .2rem .3rem .2rem;
+        border-bottom: 1px solid #e6e6e6;
+        img{
+            width: 1.38rem;
+            height: 1.77rem;
+        }
+        div{
+            margin-left: .2rem;
+            font-size: .20rem;
+            line-height: .32rem;
+            color: #666;
+        }
+    }
+}
+//---------------------活动中心
+.activity{
+    padding-top: .1rem;
+    li{
+        padding: .3rem .55rem .2rem .55rem;
+        border-bottom: 1px solid #e6e6e6;
+        a{
+            display: block;
+        }
+        img{
+            width: 6.4rem;
+            height: 2.8rem;
+        }
+        p{
+            font-size: .26rem;
+            color: #333;
+        }
+    }
+}
+//----------------基本信息
+.base-info{
+    padding: .1rem 0;
+    li{
+        padding: 0 .2rem;
+        border-bottom: 1px solid #e0e0e0;
+        font-size: .24rem;
+        height: .9rem;
+        line-height: .9rem;
+    }
+    span{
+        display: block;
+        width: 1.65rem;
+        color: #333;
+    }
+    .info{
+        width: 4.2rem;
+        white-space:nowrap;
+        color: #969696;
+        label{
+            color: #dea554;
+        }
+    }
+    .operation{
+        text-align: right;
+        width: 1.3rem;
+        white-space:nowrap;
+        color: #62b7e8;
+        a{
+            color: #62b7e8;
+        }
+    }
+}
+//--------------------卡卷管理
+.card-manage{
+    padding: .2rem;
+    p{
+        font-size: .24rem;
+        color: #333;
+    }
+    li{
+        background: #ff8080;
+        padding: .12rem;
+        color: #fff;
+        border-radius: .1rem;
+        height: .64rem;
+        line-height: .64rem;
+        margin: .1rem 0;
+        font-size: .24rem;
+        span{
+            display: block;
+            width: 2rem;
+        }
+        div{
+            width: 3.4rem;
+        }
+        a{
+            display: block;
+            width: 1.3rem;
+            color: #fff;
+        }
+    }
+    .add{
+        display: block;
+        width: 100%;
+        height: .64rem;
+        text-align: center;
+        line-height: .5rem;
+        color: #999;
+        border: 1px dashed #D0D6D6;
+        margin-top: .2rem;
+        border-radius: .1rem;
+    }
+}
+//-----------------密码设置
+.set-pass{
+    padding-left: .2rem;
+    a{
+        display: block;
+        line-height: .96rem;
+        border-top: 1px solid #eee;
+        padding-right: .2rem;
+        padding-left: .1rem;
+        color: #666;
+        font-size: .28rem;
+        img{
+            width: .36rem;
+            height: .36rem;
+            vertical-align: middle;
+        }
+        span{
+            line-height: .96rem;
+            color: #666;
+            font-size: .46rem;
+            vertical-align: middle;
+        }
+    }
+    a:first-child{
+        border-top: none;
+    }
+}
+//------------------添加银行卡
+.add-card{
+    p{
+        font-size: .24rem;
+        color: #999;
+        margin: .2rem 0 0 .2rem;
+        border-bottom: 1px solid #eee;
+        padding-bottom: .1rem;
+    }
+    ul{
+        margin: 0 .2rem;
+    }
+    li{
+        height: .84rem;
+        line-height: .84rem;
+        font-size: .24rem;
+        border-bottom: 1px solid #eee;
+        div{
+            width: 5.6rem;
+        }
+        select,input{
+            margin: 0;
+            border: none;
+            color: #666;
+        }
+        .title{
+            display: block;
+            width: 1.2rem;
+        }
+        .fa{
+            font-size: .46rem;
+            color: #666;
+        }
+    }
+    button{
+        width: 100%;
+        height: .64rem;
+        background: #ff8080;
+        color: #fff;
+        border: none;
+        border-radius: 0;
+        margin-top: .4rem;
+    }
+}
+//-------------------我的投资
+.my-invest{
+    .flex{
+        padding: .2rem .3rem;
+        border-bottom: 1px solid #eee;
+        div{
+            height: .58rem;
+            border: 1px solid #489bdb !important;
+            color: #489bdb;
+            text-align: center;
+            padding: .1rem .2rem;
+            border-radius: .1rem;
+        }
+    }
+    select{
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+    .table{
+        width: 100%;
+        tr{
+            border-bottom: 1px solid #eee;
+        }
+        th{
+            width: 20%;
+            color: #489bdb;
+            height: .82rem;
+            a{
+                color: #489bdb;
+            }
+        }
+        td{
+            text-align: center;
+            color: #666;
+            height: .9rem;
+            a{
+                color: #fff;
+                margin: 0 auto;
+                display: block;
+                width: .4rem;
+                height: .4rem;
+                border-radius: 50%;
+                text-align: center;
+                line-height: .4rem;
+                background: #489bdb;
+            }
+        }
+            
+        label{
+            color: #999;
+        }
+        .fail{
+            color: #eb1c24;
+        }
+        .success{
+            color: #489bdb;
+        }
+    }
+}
+//--------------------我的账户
+.myAccount{
+    .info{
+        height: 3.54rem;
+        text-align: center;
+        background: url(../images/myAccount_01.png) no-repeat;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+        h2{
+            padding: .6rem 0 .1rem 0;
+            margin: 0;
+            font-size: .3rem;
+            font-weight: 100;
+        }
+        p,h5{
+            color: #fff;
+            font-size: .24rem;
+        }
+        .flex{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: .1rem 1rem;
+            background: rgba(0,0,0,.3);
+        }
+        .border{
+            height: .52rem;
+            border-left: 1px solid #fff;
+        }
+    }
+    .menu{
+        margin-top: .4rem;
+        a{
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+            width: 2.5rem;
+            height: 2.5rem;
+            border: 1px solid #eee;
+            float: left;
+            padding-top: .72rem;
+        }
+        img{
+            width: .76rem;
+            height: .64rem;
+        }
+        p{
+            font-size: .24rem;
+            color: #666;
+            line-height: .3rem;
+        }
+    }
+}
+//---------------支付密码设置
+.pay-pass{
+    ul{
+        margin: 0 .2rem;
+        li{
+            height: .94rem;
+            border-bottom: 1px solid #eee;
+            line-height: .94rem;
+            span{
+                display: inline-block;
+                width: 2rem;
+            }
+            input{
+                width: 5rem;
+                margin: 0;
+                border: none;
+                height: .86rem;
+            }
+        }
+    }
+    button{
+        width: 100%;
+        background: #ff8080;
+        color: #fff;
+        height: .64rem;
+        margin-top: .4rem;
+        border: none;
+        border-radius: 0;
+    }
+}
+//----------------资金明细
+.money-detail{
+    margin: .2rem;
+    input{
+        display: inline-block;
+        width: 1.6rem;
+        height: .36rem;
+        padding: 0;
+        font-size: .24rem;
+        margin: 0;
+    }
+    label{
+        color: #f50010;
+    }
+    div{
+        border-bottom: 1px solid #eee;
+        padding: .2rem 0;
+    }
+    .table{
+        width: 100%;
+        font-size: .24rem;
+        tr{
+            border-bottom: 1px solid #eee;
+        }
+        th{
+            width: 20%;
+            height: .56rem;
+            color: #666;
+            font-weight: 100;
+        }
+        td{
+            text-align: center;
+            color: #666;
+            height: .9rem;
+        }
+    }
+}
+.more{
+    margin: .2rem;
+    ul{
+        margin-bottom: .3rem;
+        background: #f5f5f5;
+        padding: 0 .3rem 0 .42rem;
+        border-radius: .12rem;
+        li{
+            border-top: 1px solid #d1d1d1;
+            padding: 0 .1rem;
+            a{
+                display: block;
+                height: .8rem;
+                line-height: .8rem;
+                img{
+                    width: .4rem;
+                    height: .4rem;
+                    vertical-align: middle;
+                    margin-right: .2rem;
+                }
+                span{
+                    color: #666;
+                    font-size: .28rem;
+                }
+                .fa{
+                    float: right;
+                    line-height: .8rem;
+                    font-size: .4rem;
+                    margin-left: .2rem;
+                }
+            }
+        }
+        li:first-child{
+            border-top: none;
+        }
+    }
+}
+//-----------------公司简介
+.company-intro{
+    padding: 0 .36rem;
+    img{
+        display: block;
+        margin: .4rem auto;
+        width: 2.46rem;
+        height: .66rem;
+    }
+    p{
+        text-indent: 2em;
+        line-height: .46rem;
+        font-size: .24rem;
+    }
+}
+//-----------------------官方公告
+.offical-announce{
+    padding: .3rem .2rem;
+    font-size: .24rem;
+    h2{
+        font-weight: 100;
+        color: #4d4d4d;
+        span{
+            color: #b3b3b3;
+        }
+        a{
+            font-size: .3rem;
+            color: #333;
+        }
+    }
+    h4{
+        margin: .8rem 0 .2rem 0;
+        font-size: .28rem;
+        color: #4d4d4d;
+    }
+    h4,h5{
+        font-weight: 100;
+        text-align: center;
+    }
+    h5{
+        margin-bottom: .3rem;
+        color: #b3b3b3;
+    }
+    p{
+        line-height: .45rem;
+        text-indent: 2em;
+        color: #808080;
+        font-size: .24rem;
+    }
+}
+//-------------------官方公告列表
+.offical-list{
+    padding: 0 .2rem;
+    a{
+        height: 1.16rem;
+        padding-top: .2rem;
+        border-bottom: 1px solid #eee;
+        .title{
+            display: block;
+            width: 5rem;
+            color: #666;
+        }
+        .time{
+            color: #999;
+        }
+        .fa{
+            color: #666;
+            font-size: .4rem;
+        }
+    }
+}
+//---------------加入我们
+.join-us{
+    padding: .2rem;
+    line-height: .36rem;
+    h2{
+        font-size: .3rem;
+        color: #4d4d4d;
+        font-weight: 100;
+        margin: .2rem 0;
+    }
+    h4{
+        font-size: .26rem;
+        font-weight: 100;
+        color: #4d4d4d;
+        margin: .1rem 0;
+    }
+    p{
+        font-size: .24rem;
+        color: #808080;
+    }
+}
+//----------------企业新闻
+.company-news{
+    padding: .3rem .2rem;
+    li{
+        img{
+            width: 2rem;
+            height: 1.4rem;
+        }
+        border-bottom: 1px solid #eee;
+        div{
+            width: 4.8rem;
+            margin-left: .2rem;
+            display: inline-block;
+            h5{
+                line-height: .46rem;
+                font-size: .28rem;
+                color: #666;
+            }
+            p{
+                text-align: right;
+                font-size: .24rem;
+                color: #666;
+            }
+        }
+    }
+}
+//---------------联系我们
+.contact-us{
+    h3,p,h2,h6{
+        color: #333;
+        font-weight: 100;
+    }
+    h4{
+        color: #ff2121;
+        font-weight: 100;
+        margin: .1rem 0;
+        font-size: .28rem;
+    }
+    p{
+        font-size: .24rem;
+    }
+    h3{
+        font-size: .28rem;
+        margin: .3rem .2rem;
+    }
+    ul{
+        padding: 0 .2rem;
+        border-bottom: 1px solid #eee;
+        li{
+            padding-bottom: .2rem;
+        }
+    }
+    h6{
+        margin: .2rem 0;
+        
+    }
+    .flex{
+        padding: .3rem;
+        justify-content: space-around;
+        border-bottom: 1px solid #eee;
+        div{
+            text-align: center;
+        }
+    }
+    .qrcode{
+        padding: .3rem .24rem;
+        display: flex;
+        justify-content: flex-start;
+        div{
+            margin-right: 1.2rem;
+            text-align: center;
+        }
+    }
+    img{
+        width: 1.7rem;
+        height: 1.72rem;
+    }
+    .contact-address{
+        padding: .2rem;
+        h2{
+            color: #fb5757;
+            font-size: .3rem;
+            vertical-align: middle;
+            span{
+                color: #fb5757;
+                font-size: .5rem;
+                vertical-align: middle;
+            }
+        }
+        p{
+            line-height: .5rem;
+            .fa-envelope{
+                color: #57fb99;
+                font-size: .3rem;
+            }
+            .fa-map-marker{
+                color: #fb5a5a;
+                font-size: .3rem;
+            }
+        }
+    }
+}
+//-----------------------我要投资
+.invest-tab{
+    border-bottom: 2px solid #eee;
+    justify-content: space-around;
+    line-height: .84rem;
+    margin-top: .1rem;
+    a{
+        font-size: .28rem;
+        color: #333;
+    }
+    .active{
+        color: #1d95d4;
+    }
+}
+//----------------确认投资
+.invest-sub{
+    h4{
+        font-size: .28rem;
+        color: #f00;
+        font-weight: 100;
+        margin: .2rem 0;
+    }
+    h5,div,span,p{
+        font-size: .24rem;
+        color: #666;
+    }
+    .title{
+        line-height: 1.06rem;
+        margin: 0 .2rem;
+        vertical-align: middle;
+        color: #333;
+        img{
+            width: .3rem;
+            height: .36rem;
+            vertical-align: middle;
+        }
+    }
+    ul{
+        padding-top: .3rem;
+        border-top: 1px solid #eee;
+    }
+    li{
+        padding: 0 .2rem;
+        border-bottom: 1px solid #eee;
+        line-height: .7rem;
+        span{
+            display: inline-block;
+            width: 46%;
+        }
+    }
+    input{
+        vertical-align: middle;
+    }
+    .flex{
+        margin: 0 .2rem;
+    }
+    .paystyle{
+        padding-top: .3rem;
+        border-bottom: 1px solid #eee;
+        p{
+            line-height: .7rem;
+        }
+    }
+    .button{
+        padding: .54rem .66rem;
+        .back{
+            display: block;
+            line-height: .68rem;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: .1rem;
+        }
+        button,.back{
+            font-size: .3rem;
+            width: 2.28rem;
+            height: .68rem;
+            color: #666;
+        }
+        .sub{
+            color: #fff;
+            border: none;
+            background: #ff8b18;
+        }
+    }
+}
+//-------------投资详情
+.invest-detail{
+    h2{
+        color: #4d4d4d;
+        height: .68rem;
+        line-height: .68rem;
+        font-weight: 100;
+        margin-top: .2rem;
+        padding-left: .2rem;
+        font-size: .3rem;
+        border-bottom: 1px solid #eee;
+    }
+    .info{
+        justify-content: space-around;
+        margin-bottom: .4rem;
+    }
+    .canvas{
+        width: 100px;
+        height: 100px;
+        margin: .2rem auto;
+        position: relative;
+        div{
+            position: absolute;
+            top: 30px;
+            left: 24px;
+        }
+    }
+    p,a,span{
+        color: #666;
+    }
+    h5{
+        color: #1d95d4;
+    }
+    .invest-detail-box{
+        padding: .3rem .2rem;
+        p{
+            height: .36rem;
+        }
+        .scroll{
+            height: 5rem;
+            overflow: auto;
+        }
+    }
+    .detail-tab{
+        padding: 0 .2rem;
+        line-height: .72rem;
+        border-bottom: 2px solid #eee;
+        border-top: .2rem solid #eee;
+        a{
+            font-size: .28rem;
+        }
+        .active{
+            color: #1d95d4;
+        }
+    }
+    label{
+        color: #eb1c24;
+    }
+    .btn{
+        margin: .2rem 0;
+        button,input{
+            height: .9rem;
+            border: 1px solid #eb1c24 !important;
+            margin: 0;
+            border-radius: 0 !important;
+            border-right: none;
+            background: #fff !important;
+        }
+        div{
+            width: 50%;
+            height: .9rem;
+            border: none;
+            .mui-btn{
+                color: #eb1c24;
+                width: 24%;
+            }
+            input{
+                color: #666;
+                font-size: .3rem;
+                border-left: none !important;
+                border-right: none !important;
+            }
+        }
+        .sub{
+            display: block;
+            height: .9rem;
+            line-height: .9rem;
+            text-align: center;
+            width: 50%;
+            background: #eb1c24;
+            color: #fff;
+            font-size: .36rem;
+        }
+    }
+}

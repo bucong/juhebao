@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/fontSize.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/circle-progress.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<header class="head">
+		<a href="javascript:history.back(-1)">
+			<span class="fa fa-angle-left"></span> 返回
+		</a>
+		<h3>投资详情</h3>
+	</header>
+	<article class="invest-detail">
+		<h2>巨和新手宝17A19(3天投)</h2>
+		<div class="canvas" id="canvas1">
+			<div>
+				<p>预期年化</p>
+				<p style="color: #eb1c24;">18.50%</p>
+			</div>
+		</div>
+		<div class="flex info">
+			<div>
+				<h5>期限</h5>
+				<p>24个月</p>
+			</div>
+			<div>
+				<p>起投：100元</p>
+			</div>
+		</div>
+		<section>
+			<div class="detail-tab flex">
+				<a href="javascript:void(0)">项目描述</a>
+				<a href="javascript:void(0)" class="active">合同模板</a>
+				<a href="javascript:void(0)">项目图片</a>
+				<a href="javascript:void(0)">安全保障</a>
+				<a href="javascript:void(0)">常见问题</a>
+			</div>
+			<div class="invest-detail-box">
+				<div class="scroll">
+					<p>债权及收益权转让回购协议</p>
+					<p>债权转让协议</p>
+					<p></p>
+					<p>甲方(债权转让人)：夏**</p>
+					<p>身 份 证 号 码：310************035</p>
+					<p></p>
+					<p>乙方(债权受让人)：夏**</p>
+					<p>身 份 证 号 码：</p>
+					<p></p>
+					<p>债权及收益权转让回购协议</p>
+					<p>债权转让协议</p>
+					<p></p>
+					<p>甲方(债权转让人)：夏**</p>
+					<p>身 份 证 号 码：310************035</p>
+					<p></p>
+					<p>乙方(债权受让人)：夏**</p>
+					<p>身 份 证 号 码：</p>
+					<p></p>
+					<p>
+						鉴于甲方在巨和投资管理(上海)有限公司运营管理的巨如意平台（“巨如意”，www.juheinvest.cn，以下简称平台）上对债务人拥有合法债权，现甲方将其债权通过平台转让给乙方。双方达成如下协议：
+					</p>
+					<p></p>
+				</div>
+				<div class="flex btn">
+					<div class="mui-numbox flex"  data-numbox-min='0'>
+					  <!-- "-"按钮，点击可减小当前数值 -->
+					  <button class="mui-btn mui-numbox-btn-minus" type="button">-</button>
+					  <input class="mui-numbox-input" type="number" />
+					  <!-- "+"按钮，点击可增大当前数值 -->
+					  <button class="mui-btn mui-numbox-btn-plus" type="button">+</button>
+					</div>
+					<a href="investSub.html" class="sub">立即投资</a>
+				</div>
+				<div class="flex">
+					<span>预期收益：<label>24.55</label>元</span>
+					<span>付款金额：<label>16600.00</label>元</span>
+				</div>
+			</div>
+		</section>
+	</article>
+</body>
+
+<script type="text/javascript">
+	$('#canvas1').circleProgress({
+        value: 0.19,
+        size: 100,
+        startAngle: 4.8,//开始角度
+        reverse: false,//反向绘制
+        fill: {
+            gradient: ["#eb1c24"]
+        }
+    });
+</script>
+</html>
